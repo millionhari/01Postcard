@@ -78,7 +78,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="25" y="298" width="340" height="30"/>
+                                    <rect key="frame" x="25" y="305" width="340" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pmL-U2-GdR">
@@ -89,15 +89,6 @@
                                     <rect key="frame" x="25" y="343" width="340" height="109"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97v-Fi-saU">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="25" y="160" width="340" height="121"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGF-bj-gog">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.935546875" green="0.7059763752091297" blue="0.53349957328527731" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,6 +104,24 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YhE-CA-iOC"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97v-Fi-saU">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="202" width="340" height="79"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfn-E2-db4">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="173" width="340" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -120,8 +129,9 @@
                                 <exclude reference="hwy-9X-bzF"/>
                                 <exclude reference="Qsk-ew-1MW"/>
                                 <exclude reference="pmL-U2-GdR"/>
-                                <exclude reference="97v-Fi-saU"/>
                                 <exclude reference="PGF-bj-gog"/>
+                                <exclude reference="97v-Fi-saU"/>
+                                <exclude reference="Vfn-E2-db4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -129,8 +139,9 @@
                                 <include reference="hwy-9X-bzF"/>
                                 <include reference="Qsk-ew-1MW"/>
                                 <include reference="pmL-U2-GdR"/>
-                                <include reference="97v-Fi-saU"/>
                                 <include reference="PGF-bj-gog"/>
+                                <include reference="97v-Fi-saU"/>
+                                <include reference="Vfn-E2-db4"/>
                             </mask>
                         </variation>
                     </view>
@@ -139,6 +150,7 @@
                         <outlet property="enterNameTextField" destination="Qsk-ew-1MW" id="esH-4i-00m"/>
                         <outlet property="mailButton" destination="PGF-bj-gog" id="H0T-MC-faR"/>
                         <outlet property="messageLabel" destination="97v-Fi-saU" id="nxo-xB-m1X"/>
+                        <outlet property="nameLabel" destination="Vfn-E2-db4" id="dPs-wa-0fK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
